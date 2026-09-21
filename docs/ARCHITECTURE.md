@@ -85,6 +85,7 @@ src/
     └── integrations/        # Server-only external-provider configuration
 
 docs/                       # Architecture, agent guidance, and prompt template
+prompt/                     # Reusable prompts for AI-assisted development work
 drizzle.config.ts            # Drizzle Kit configuration
 ```
 

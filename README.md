@@ -84,8 +84,8 @@ The detailed documentation is maintained in [`docs/`](./docs):
   directory map, current data model, and integration strategy.
 - [Agent instructions](./docs/AGENT_INSTRUCTIONS.md) — coding, security,
   validation, and completion rules for contributors and coding agents.
-- [Prompt template](./docs/PROMPT_TEMPLATE.md) — a reusable brief for features,
-  bug fixes, and integrations.
+- [AI prompt library](./prompt/README.md) — reusable briefs for features, bug
+  fixes, migrations, Supabase RLS, integrations, UI work, and code reviews.
 - [Documentation index](./docs/README.md) — an index of the documents above.
 
 Read the architecture document before changing application behavior. Update the
@@ -263,6 +263,7 @@ src/
     └── supabase/             # Existing Supabase helpers from the initial scaffold
 
 docs/                        # Team architecture, agent guidance, and templates
+prompt/                      # Reusable prompts for AI-assisted development work
 drizzle.config.ts             # Drizzle Kit configuration
 components.json               # shadcn/ui configuration and Supabase registry
 ```
@@ -331,7 +332,7 @@ When introducing a provider client:
 - Search for existing routes, components, schemas, and integration contracts.
 - Write down the owning subsystem, user outcome, authorization rule, data
   impact, cross-subsystem behavior, and validation plan. Use the
-  [prompt template](./docs/PROMPT_TEMPLATE.md) for scoped work.
+  [AI prompt library](./prompt/README.md) for scoped work.
 
 ### Pull requests
 
